@@ -1,11 +1,12 @@
-"use client"
-
-import { GET_COUNTRIES } from "@/graphql/queries";
+import React from "react";
+import { GET_COUNTRIES } from "../graphql/queries";
 import { useQuery } from "@apollo/client";
 import styles from "../styles/Home.module.scss";
 
-export default function Countries() {
-
+/**
+ * Countries is a component that fetches and displays a list of countries.
+ */
+const Countries = () => {
   const { data, loading, error } = useQuery(GET_COUNTRIES);
 
   if (loading) {
@@ -31,4 +32,6 @@ export default function Countries() {
       ))}
     </div>
   );
-}
+};
+
+export default Countries;

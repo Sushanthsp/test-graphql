@@ -1,7 +1,7 @@
 "use client"
 import { useRouter } from "next/router";
 import { useQuery, gql } from "@apollo/client";
-import { GET_COUNTRY_BY_CODE } from "@/graphql/queries";
+import { GET_COUNTRY_BY_CODE } from "../../graphql/queries";
 
 export default function CountryPage() {
     const router = useRouter();

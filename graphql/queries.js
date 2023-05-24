@@ -11,10 +11,10 @@ export const GET_COUNTRIES = gql`
 `;
 
 export const GET_COUNTRY_BY_CODE = gql`
-query GetCountryByCode($code:String) {
-  country(code:$code) {
-    code,
-    name
+  query GetCountryByCode($code: ID!) {
+    country(code: $code) {
+      code
+      name
+    }
   }
-}
 `;

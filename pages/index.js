@@ -2,8 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { gql } from "@apollo/client";
 import client from "../api/apollo-client";
-import Button from "@/components/Button/Button";
-import { GET_COUNTRIES } from "@/graphql/queries";
+import { GET_COUNTRIES } from "../graphql/queries";
 import Link from "next/link";
 
 export default function Home({ countries }) {
@@ -19,10 +18,7 @@ export default function Home({ countries }) {
           Server side rendering
         </h1>
         
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+         
 
         <div className={styles.grid}>
           {countries.map((country) => (
@@ -59,7 +55,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      countries: data.countries.slice(0, 4),
+      countries: data.countries.slice(0, 20),
     },
   };
 }
