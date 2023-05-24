@@ -11,19 +11,22 @@
   },
   "dependencies": {
     "@apollo/client": "^3.3.11",
-    "graphql": "^15.5.0",
-    "next": "10.0.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
     "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3"
+    "eslint-config-next": "13.4.3",
+    "graphql": "^15.5.0",
+    "next": "13.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rsg-components": "^3.0.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.4",
     "node-sass": "^7.0.3",
+    "react-styleguidist": "^13.1.1",
     "sass-loader": "^13.3.0",
-    "style-loader": "^3.3.3"
+    "style-loader": "^3.3.3",
+    "webpack": "^5.83.1"
   }
 }

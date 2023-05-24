@@ -2,6 +2,7 @@
 import { useRouter } from "next/router";
 import { useQuery, gql } from "@apollo/client";
 import { GET_COUNTRY_BY_CODE } from "../../graphql/queries";
+import styles from "../../styles/CountryPage.module.scss";
 
 export default function CountryPage() {
     const router = useRouter();
@@ -22,9 +23,12 @@ export default function CountryPage() {
     const countryName = data?.country?.name;
   
     return (
-      <div>
-        <h1>Country Page: {code}</h1>
-        {countryName && <p>Country Name: {countryName}</p>}
+      <div className={styles.container}>
+      <div className={styles.content}>
+        <h1 className={styles.heading}>Country Page: {code}</h1>
+        {countryName && <p className={styles.para}>Country Name: {countryName}</p>}
       </div>
+    </div>
+    
     );
   }

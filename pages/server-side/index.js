@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/Home.module.scss";
 import client from "../../api/apollo-client";
-import { GET_COUNTRIES } from "../graphql/queries";
+import { GET_COUNTRIES } from "../../graphql/queries";
 import Link from "next/link";
 
 export default function Home({ countries }) {

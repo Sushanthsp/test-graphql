@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import style from './Button.module.scss';
 
 /**
  * The only true button.
@@ -13,7 +12,7 @@ export default function Button({ color, size, onClick, disabled, children }) {
 	};
 
 	return (
-		<button className={style.button} style={styles} onClick={onClick} disabled={disabled}>
+		<button  style={styles} onClick={onClick} disabled={disabled}>
 			{children}
 		</button>
 	);
